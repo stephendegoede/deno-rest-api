@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "strict": true
+  },
+  "lint": {
+    "files": {
+      "include": ["./src/"]
+    }
+  },
+  "fmt": {
+    "files": {
+      "include": ["./src/"]
+    },
+    "options": {
+      "useTabs": true,
+      "lineWidth": 120,
+      "indentWidth": 4,
+      "singleQuote": true,
+      "proseWrap": "preserve"
+    }
+  },
+  "tasks": {
+    "run": "deno run --allow-net ./src/fetch-example.ts https://www.google.com"
+  }
+}
